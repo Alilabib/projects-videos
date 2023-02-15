@@ -1,0 +1,115 @@
+:root{
+    --main-color: white;
+    --main-background-color:black;
+    --light-green:#4dbf00;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html,body{
+    font-family: 'Courier New', Courier, monospace;
+    height: 100%;
+}
+/* navbar */
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: var(--main-background-color);
+}
+
+.navbar > .container{
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+    height: 100%;
+    color: var(--main-color);
+}
+/* navbar */
+
+/* logo */
+.navbar > .container > .logo{
+    flex: 1;
+}
+
+.navbar > .container > .logo .logo-title{
+    color: var(--light-green);
+}
+/* logo */
+/* menu */
+.navbar > .container > .menu{
+    flex: 6;
+}
+.navbar > .container > .menu .menu-list{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+.navbar > .container > .menu .menu-list .menu-list-item{
+    margin-right: 30px;
+}
+.navbar > .container > .menu .menu-list .menu-list-item.active{
+    font-weight: 800;
+}
+/* menu */
+/* profile */
+.navbar > .container > .profile{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+} 
+.profile-img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile-menu{
+    margin: 0 20px;
+}
+.toggle{
+    width: 42px;
+    height: 20px;
+    background-color: var(--main-color);
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.toggle-icons{
+    color: goldenrod;
+}
+.toggle-cir{
+    width: 18px;
+    height: 18px;
+    background-color: var(--main-background-color);
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+}
+/* profile */
+
+/* sidebar */
+.sidebar{
+    width: 50px;
+    height: 100%;
+    background-color: var(--main-background-color);
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    padding-top: 60px;
+}
+.side-menu-icon{
+    color: var(--main-color);
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+/* sidebar */
