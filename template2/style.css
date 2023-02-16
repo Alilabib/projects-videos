@@ -240,3 +240,10 @@ html,body{
     cursor: pointer;
 }
 /* content */
+
+[data-theme="dark"]{
+    --main-color: black;
+    --main-background-color:white;
+    --light-green:#4dbf00;
+    --conent-color:#fff;
+}

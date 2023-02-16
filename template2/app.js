@@ -18,3 +18,13 @@ arrows.forEach((arrow,i)=>{
 
     });
 });
+
+const toggleSwitch = document.querySelector(".toggle-cir");
+function switchTheme(e){
+    if(e.target.checked){
+        document.documentElement.setAttribute("data-theme",'dark');
+    }else{
+        document.documentElement.removeAttribute("data-theme");
+    }
+}
+toggleSwitch.addEventListener("click",switchTheme);
